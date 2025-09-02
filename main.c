@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    printf("hello, world\n");
-    return 0;
+    printf("markinson's law:\nwork expands so as to");
+    printf("fill the time\n");
 }
