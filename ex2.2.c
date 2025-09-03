@@ -8,7 +8,7 @@ int main(void){
         printf("entrer un nombre:");
         scanf("%d",&N);
         }
-        while(N<0 || N>99);
+        while(N<10 || N>99);
         m=N%10;
         n=N/10;
 
