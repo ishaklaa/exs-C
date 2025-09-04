@@ -39,20 +39,20 @@ int main(void){
         printf("l'heure de depart est: 12h47");
     }
     
-     else if((T[0]*60)+T[1]<120 && (T[0]*60)+T[1]>=767){
+     else if((T[0]*60)+T[1]<840 && (T[0]*60)+T[1]>=767){
         printf("l'heure de depart est: 2h00");
     }
     
-     else if((T[0]*60)+T[1]<225 && (T[0]*60)+T[1]>=120){
+     else if((T[0]*60)+T[1]<945 && (T[0]*60)+T[1]>=840){
         printf("l'heure de depart est: 3h45");
     }
     
 
-     else if((T[0]*60)+T[1]<420 && (T[0]*60)+T[1]>=225){
+     else if((T[0]*60)+T[1]<1140 && (T[0]*60)+T[1]>=945){
         printf("l'heure de depart est: 7h00");
     }
     
-     else if ((T[0]*60)+T[1]<585 && (T[0]*60)+T[1]>=420){
+     else if ((T[0]*60)+T[1]<1305 && (T[0]*60)+T[1]>=1140){
         printf("l'heure de depart est:9h45");
     }
    
