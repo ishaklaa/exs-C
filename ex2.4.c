@@ -1,33 +1,47 @@
 #include <stdio.h>
 
 int main(){
-    int T[2],L[2];
-    do{
-        printf("entrer une date :");
-        scanf("%d %d %d",&T[0],&T[1],&T[2]);
-    }
-    while((T[0]<0||T[0]>31)||(T[1]<0||T[1]>12)||(T[2]<0||T[2]>2025));
-    do{
-        printf("entrer une deuxieme date :");
-        scanf("%d %d %d",&L[0],&L[1],&L[2]);
-    }
-    while((L[0]<0||L[0]>31)||(L[1]<0||L[1]>12)||(L[2]<0||L[2]>2025));
-    if (L[2]>T[2]){
-        printf("%d-%d-%d est la date la plus ancienne.",T[0],T[1],T[2]);
-    }
-    else if ((L[2]==T[2])&&(L[1]>T[1])){
-         printf("%d-%d-%d est la date la plus ancienne.",T[0],T[1],T[2]);
+    int N, S;
+        printf("entrer la note");
+        scanf("%d",&N);
+        S=N/10;
+        switch(S){
+            case 1 : printf("Note litterale : F");
+                     break;
+            case 2 : printf("Note litterale : F");
+                     break;
+            case 3 : printf("Note litterale : F");
+                     break;
+            case 4 : printf("Note litterale : F");
+                     break;
+            case 5 : printf("Note litterale : F");
+                     break;
+            case 6 : printf("Note litterale : D");
+                     break;
+            case 7 : printf("Note litterale : C");
+                     break;
+            case 8 : printf("Note litterale : B");
+                     break;
+            case 9 : printf("Note litterale : A");
+                     break;
+            case 10 : printf("Note litterale : A");
+                     break;
 
-    }
-    else if((L[2]==T[2])&&(L[1]==T[1])&&(L[0]>T[0])){
-         printf("%d-%d-%d est la date la plus ancienne.",T[0],T[1],T[2]);
+            // default: printf("erreur:le nombre doit etre 0 rt 100");
+            default:
+            if (S<1)
+            {
+               printf("Note litterale : F");
+            
+            }
+            else{
+                 printf("erreur:le nombre doit etre 0 rt 100");
+            }
+            
 
-
-    }
-    else{
-        printf("%d-%d-%d est la date la plus ancienne.",L[0],L[1],L[2]);
-    }
-
+        }
+    
+    
 
 
 
